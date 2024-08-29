@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+    color: #444;
+
+}
+
+html body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../imgens/fundo_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* dimençoes e possicoes  */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box-login {
+    background-color: rgba(255, 255, 255, 0.7);
+    min-height: 450px;
+    text-align: center;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.9);
+}
+
+.box-login h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+/*  */
+
+
+/* bordas do formulario */
+fieldset.bordas {
+    border: 0px;
+}
+
+/*  */
+/* caracteriscas do formulario */
+.email span {
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+
+}
+
+.email input[type="email"] {
+
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgba(234, 234, 234, 0.7);
+}
+
+.senha span {
+    margin: 25px 0 0 0;
+    display: block;
+    text-align: left;
+
+}
+
+.senha input[type="password"] {
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgba(234, 234, 234, 0.7);
+}
+
+.box input[type=checkbox] {
+    cursor: pointer;
+}
+
+.box {
+    text-align: left;
+    font-size: 12px;
+}
+
+.carateristicas .box {
+    padding: 15px 0;
+}
+
+.carateristicas .box p {
+    padding: 15px 0;
+}
+
+.box a {
+    padding: 10px 0 0;
+    text-decoration: none;
+    color: #444;
+}
+
+.box p a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.enviar input[type=submit] {
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #444;
+    color: white;
+    font-weight: 700;
+}
+
+/* ** */
+
+
+/* animaçoes para ususarios */
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #1b390e;
+    box-shadow: 3px 7px 17px rgba(0, 0, 0, 0.4);
+}
+
+
+.enviar input[type=submit]:hover {
+    background-color: #1b390e;
+    border: 1px solid white;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ** */
+
+/* responsividade de 781px /780px */
+
+@media screen and (min-width: 781px) {
+    .box-login {
+        transition: 0.5s;
+        max-height: 500px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .box-login {
+        transition: 0.5s;
+        max-height: 450px;
+        max-width: 350px;
+        padding: 40px;
+    }
+
+    .email span {
+        font-size: 13px;
+    }
+
+    .senha span {
+        font-size: 13px;
+    }
+
+    .email input[type="email"] {
+        font-size: 10px;
+    }
+
+    .senha input[type="password"] {
+        font-size: 10px;
+    }
+
+}
+
+/* ** */
+
+/* responsividade de 580px */
+
+@media screen and (max-width: 580px) {
+    .box-login {
+        transition: 0.3s;
+        margin: 0 2%;
+        max-height: 420px;
+        max-width: 320px;
+    }
+}
+
+/* ** */
+
+/* responsividade de 380px */
+
+@media screen and (max-width: 380px) {
+
+    .box-login {
+        padding: 0 5%;
+        margin: 0 2%;
+        max-height: 400px;
+        max-width: 300px;
+    }
+
+    .box-login h2 {
+        margin-top: 5%;
+    }
+
+    .carateristicas .box p {
+        padding-top: 15px 0;
+    }
+
+}
+
+/* ** */
+
+/* responsividade de 300px */
+
+@media screen and (max-width: 300px) {
+    .box-login {
+        margin: 0 2%;
+        max-height: calc(100% -4%);
+        max-width: calc(100% -4%);
+        /* padding: 40px; */
+    }
+
+    .carateristicas .box p {
+        padding-top: 20px 0;
+    }
+
+    html body {
+        height: 100%;
+
+    }
+}
+
+/* ** */
