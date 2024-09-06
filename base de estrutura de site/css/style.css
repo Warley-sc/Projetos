@@ -1,0 +1,562 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu-ham {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+header {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(../img/fundo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contorno {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+.contorno .logo {
+    float: left;
+    padding: 20px 2%;
+}
+
+.container .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.navegacao {
+    float: right;
+}
+
+.nav-desktop {
+    padding: 20px 0;
+}
+
+.nav-desktop ul li {
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.nav-desktop ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-desktop ul li a:hover{
+    color: black;
+
+}
+.nav-desktop ul li:hover {
+    background-color: #bce3b5;
+    transition: 0.5s;
+    color: black;
+}
+
+
+main {
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+}
+
+section.sobre {
+    width: 100%;
+}
+
+.wraper {
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wraper01 {
+    padding: 20px;
+    max-width: 880;
+    width: 40%;
+
+}
+
+.wraper-perfil {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-color: white;
+    transition: 0.5s;
+
+}
+
+.wraper .align-button {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px 0;
+    position: center;
+
+}
+
+.wraper .button {
+    margin: 20px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.wraper .button:hover {
+    background-color: #bce3b5;
+    transition: 0.5s;
+}
+
+.wraper-text {
+    padding: 20px;
+    text-align: justify;
+}
+
+.wraper-text p {
+    color: white;
+}
+
+.wraper-text h2 {
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+section.projetos {
+    width: 100%;
+    padding: 20px;
+}
+
+section.projetos h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section.projetos p {
+    text-align: center;
+}
+
+.wraper-projetos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projetos01 {
+
+    width: 350px;
+    height: 250px;
+    background-color: #ccc;
+    margin: 40px 0;
+    border-radius: 15px;
+}
+
+.descricao01 {
+    border-radius: 20px;
+    height: 80px;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    background-color: black;
+}
+
+.img-projeto {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 30px;
+}
+
+.descricao01 p {
+    display: none;
+}
+
+
+section.formulario{
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    padding: 20px 0;
+}
+section.formulario fieldset{
+    padding: 20px 0;
+}
+section.formulario .entrar-contato{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+
+}
+section.formulario form{
+    margin: 0 auto;
+    width: 450px;
+    padding: 30px 0;
+    background-color: #bce3b5;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+section.formulario form .text-nome{
+    text-align: left;
+    margin: 20px 0 0 23px;
+    font-size: 18px;
+
+}
+
+section.formulario form input[type=text]{
+    width: 90%;
+    height: 30px;
+    padding: 15px 0;
+    margin: 10px auto;
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+section.formulario form .text-email{
+    text-align: left;
+    margin: 20px 0 0 23px;
+    font-size: 18px;
+
+}
+
+section.formulario form input[type=email]{
+    width: 90%;
+    height: 30px;
+    padding: 15px 0;
+    margin: 10px auto;
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+section.formulario form .text-ctt{
+    text-align: left;
+    margin: 20px 0 0 23px;
+    font-size: 18px;
+
+}
+
+section.formulario form input[type=number]{
+    width: 90%;
+    height: 30px;
+    padding: 15px 0;
+    margin: 10px auto;
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+section.formulario form .text-descricao{
+    text-align: left;
+    margin: 20px 0 0 23px;
+    font-size: 18px;
+}
+
+section.formulario form textarea{
+    width: 90%;
+    height: 120px;
+    margin: 10px auto;
+    resize: none;
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+section.formulario form .enviar{
+    width: 100%;
+    height: 45px;
+}
+section.formulario form input[type=submit]{
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: solid 1px black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+section.color{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #222222;
+    border-radius: 20px 20px 0 0;
+
+}
+
+section.rodape-1{padding: 20px 0;
+    background-color: #222222;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+section.rodape-1 .footer-wraper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section.rodape-1 .ctt-wraper{
+    padding: 20px 0;
+    width: 40%;
+    color: white;
+}
+
+section.rodape-1 .ctt-wraper h2{
+text-transform: uppercase;
+padding: 10px 0;
+}
+
+section.rodape-1 .ctt-wraper p{
+    padding: 8px 0;
+    font-size: 18px;
+    }
+
+
+section.rodape-2{
+    background-color: black;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+section.rodape-2 footer h2{
+    padding: 20px 0;
+text-align: center;
+color: white;
+}
+
+
+.footer-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.icon-wraper{
+    width: 200px;
+    border: solid 1px rgb(0, 0, 0);
+}
+.icon-wraper .rede{
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+section.rodape-2 p{
+    text-align: center;
+    color: white ;
+    padding: 10px 0;
+    }
+
+@media screen and (max-width:780px) {
+    header {
+        width: 100%;
+        max-height: 650px;
+        height: 100%;
+        background-image: url(../img/Design\ sem\ nome\ \(5\).png);
+        background-position: center;
+
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .navegacao {
+        width: 100%;
+
+    }
+
+    .nav-mobile {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+    }
+
+    .menu-ham {
+        float: right;
+        display: block;
+        width: 70px;
+        height: 70px;
+        padding: 0 2%;
+        margin: 0 2%;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+
+    .wraper {
+        display: flex;
+        width: 100%;
+        /* align-items: center; */
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .wraper01 {
+        margin-bottom: 15px;
+        width: 80%;
+        height: 350px;
+    }
+
+    .nav-mobile ul li {
+        padding: 12px;
+        border-top: 1px solid white;
+
+    }
+
+    .nav-mobile ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    .contorno .logo {
+        /* float: none; */
+        padding: 20px 2%;
+        width: 50%;
+
+    }
+
+
+    .pj5 {
+        display: none;
+    }
+
+    .pj6 {
+        display: none;
+    }
+    .icon-wraper{
+        width: 50%;
+        margin-top: 20px;
+        border: solid 1px rgb(0, 0, 0);
+    }
+    .icon-wraper .rede{
+
+        background: #ccc;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width:650px) {
+
+    .wraper01 {
+        width: 100%;
+        /* padding: 15px; */
+
+    }
+    .pj4{
+        display: none;
+    }
+    section.formulario form{
+        margin: 0 auto;
+        width: 98%;
+        padding: 30px 0;
+        background-color: #bce3b5;
+        border-radius: 10px;
+        border: solid 1px black;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    header {
+        background-color: black;
+        width: 100%;
+        background-image: url(../img/Design\ sem\ nome\ \(5\).png);
+        background-size: 400px;
+
+    }
+
+    .wraper01 {
+        padding: 0;
+
+    }
+
+    .wraper-perfil {
+        width: 180px;
+        height: 180px;
+        transition: 0.5s;
+    }
+
+    .wraper .button {
+        width: 80%;
+
+    }
+    .projetos01 {
+        width: 200px;
+        height: 200px;
+        margin: 40px 0;
+        border-radius: 15px;
+    }
+    .descricao01 {
+        border-radius: 20px;
+        height: 80px;
+        position: relative;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 100%;
+        background-color: black;
+    }
+    section.rodape-1 .ctt-wraper{
+        padding: 20px 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    .icon-wraper .rede{
+        width: 60px;
+        height: 60px;
+        background: #ccc;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+
+}
