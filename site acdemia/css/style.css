@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "PT Serif", serif;
+  color: black;
+}
+html body {
+  height: 100%;
+}
+
+.container-1 {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+
+/* cabecario */
+
+header {
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  background-color: #555555;
+  height: 65px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.logo {
+  float: left;
+  padding: 10px;
+  color: white;
+}
+.navbar-desktop {
+  float: right;
+}
+
+.navbar-desktop ul li {
+  margin-left: 30px;
+  display: inline-block;
+  padding: 2px 15px;
+  margin-top: 15px;
+  list-style: none;
+}
+.navbar-desktop ul li:hover {
+  border-radius: 10px;
+  background-color: rgb(101, 152, 152);
+}
+.navbar-desktop ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile-01 {
+  display: none;
+}
+
+.icon-menu {
+  display: none;
+  cursor: pointer;
+}
+.icon-menu span {
+  margin: 8px;
+  display: block;
+  height: 2px;
+  width: 32px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.carousel {
+  padding: 0 2%;
+  border-radius: 10px;
+  margin: 70px auto;
+  max-width: 1220px;
+  max-height: 550px;
+}
+
+.d-block {
+  transition: 0;
+  border-radius: 10px;
+  max-height: 550px;
+}
+
+main.introducao {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px 2%;
+  min-height: 280px;
+  box-shadow: 2px 5px 15px #c0c0c0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+main.introducao h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+main.introducao p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+section.planos {
+  width: 100%;
+  text-align: center;
+}
+
+section.card-wraper-var {
+  padding: 20px;
+  width: 100%;
+}
+.card-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.img-wraper {
+  box-shadow: 2px 5px 15px #c0c0c0;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  min-width: 300px;
+  padding: 12px;
+  width: 28%;
+  min-height: 300px;
+}
+.img-wraper .card-img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  max-width: 350px;
+  height: 230px;
+  background-image: url(https://treinoedietasaudavel.com/wp-content/uploads/2023/06/treino-de-adaptacao.jpg);
+}
+.img-wraper .text h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(101, 152, 152);
+}
+.img-wraper .text p {
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: justify;
+  padding: 10px;
+}
+.card4 {
+  display: none;
+}
+
+/* descircao */
+section.descricao {
+  background-color: rgb(101, 152, 152);
+  text-align: center;
+  min-height: 400px;
+  padding: 20px 10px;
+}
+section.descricao h2 {
+  font-weight: 600;
+  padding: 15px;
+}
+
+section.descricao .text-descricao {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 300px;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 2px 5px 15px #000000;
+}
+section.descricao .text-descricao .img-descricao {
+  background-image: url(https://i0.statig.com.br/bancodeimagens/5u/gf/wm/5ugfwmhy1mdlrml5p6q09d6nx.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+section.descricao .text-descricao .img-descricao1 {
+  background-image: url(https://www.blog.nadarte.com/wp-content/uploads/2020/04/original-a5e663c386ee5dd5dd89601488a2b9f5.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+section.descricao .text-descricao .img-descricao2 {
+  background-image: url(https://odia.ig.com.br/_midias/jpg/2020/08/22/1140x632/1_alimentacao_saudavel-19092650.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+section.contato {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  min-height: 400px;
+}
+section.contato h2 {
+  font-weight: 600;
+}
+section.contato .contato-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contatos {
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+  background: rgb(101, 152, 152);
+  border-radius: 50px;
+  transition: 1s;
+  cursor: pointer;
+}
+.contatos:hover {
+  box-shadow: 2px 5px 15px black;
+}
+.cnt1 {
+  background-image: url(https://www.tuexperto.com/wp-content/uploads/2019/05/whatsapp-01-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cnt2 {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/017/743/717/large_2x/instagram-icon-logo-free-png.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cnt3 {
+  background-image: url(https://www.meilleure-innovation.com/wp-content/uploads/2021/05/logo-facebook-png-transparent.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cnt4 {
+  background-image: url(https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer {
+  padding: 30px;
+  width: 100%;
+  background-color: black;
+  min-height: 400px;
+  border-radius: 12px 12px 0 0;
+}
+footer .direitos h3{
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+.rodape-wraper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.rodape-1 {
+  min-width: 200px;
+  padding: 20px;
+  max-width: 400px;
+  height: 300px;
+}
+.rodape-1 h3 {
+  color: white;
+  font-size: 20px;
+}
+.rodape-1 p {
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+}
+@media screen and (max-width: 750px) {
+  .icon-menu {
+    padding: 10px;
+    float: right;
+    display: block;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile-01 {
+    background-color: rgb(101, 152, 152);
+    float: left;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 5px 10px #555555;
+  }
+  .navbar-mobile-01 hr {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .navbar-mobile-01 ul li {
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    list-style: none;
+  }
+  .navbar-mobile-01 ul li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-wraper {
+    box-shadow: 2px 5px 15px #c0c0c0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    min-width: 100%;
+    padding: 5px;
+    width: 28%;
+    min-height: 300px;
+  }
+  .rodape-1 {
+  min-width: none;
+  padding: 20px;
+  max-width: 120px;
+  height: 300px;
+}
+footer {
+  padding: 30px 0;
+  width: 100%;
+  background-color: black;
+  min-height: 400px;
+}
+}
