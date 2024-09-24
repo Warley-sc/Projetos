@@ -74,7 +74,7 @@ header {
   padding: 0 2%;
   border-radius: 10px;
   margin: 70px auto;
-  max-width: 1220px;
+  max-width: 1240px;
   max-height: 550px;
 }
 
@@ -83,21 +83,33 @@ header {
   border-radius: 10px;
   max-height: 550px;
 }
-
-main.introducao {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 20px 2%;
+section.apresentacao {
+  width: 100%;
   min-height: 280px;
-  box-shadow: 2px 5px 15px #c0c0c0;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  padding: 10px;
 }
-main.introducao h2 {
+section.apresentacao h2 {
   margin-bottom: 20px;
   text-align: center;
   font-size: 30px;
 }
+
+main.introducao {
+  min-height: 280px;
+
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 2px 5px 15px #c0c0c0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+main.introducao h2{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
 main.introducao p {
   font-size: 18px;
   text-align: justify;
@@ -109,13 +121,13 @@ section.planos {
 }
 
 section.card-wraper-var {
-  padding: 20px;
+  padding: 10px;
   width: 100%;
 }
 .card-wraper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .img-wraper {
   box-shadow: 2px 5px 15px #c0c0c0;
@@ -148,20 +160,21 @@ section.card-wraper-var {
   text-align: justify;
   padding: 10px;
 }
-.card4 {
+/* .card4 {
   display: none;
-}
+} */
 
 /* descircao */
 section.descricao {
   background-color: rgb(101, 152, 152);
-  text-align: center;
   min-height: 400px;
   padding: 20px 10px;
 }
-section.descricao h2 {
+section.descricao > h2 {
+  text-align: center;
   font-weight: 600;
   padding: 15px;
+  color: white;
 }
 
 section.descricao .text-descricao {
@@ -204,11 +217,93 @@ section.descricao .text-descricao .img-descricao2 {
   margin: 0 auto;
   border-radius: 10px;
 }
+.text-descricao h2 {
+  padding: 20px;
+  text-align: center;
+}
+.text-descricao p {
+  text-align: justify;
+}
+
+/* avaliação */
+section.depoimentos{
+  padding: 10px;
+  width: 100%;
+}
+section.depoimentos h2{
+  text-align: center;
+  margin: 40px 0;
+}
+.depoimento-wraper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.depoiementos-comment{
+  width: 300px;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 5px 10px #000000;
+}
+.entorno{
+  width: 100%;
+}
+.text-comment{
+  text-align: justify;
+}
+.depoiementos-comment .img-comment{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #000000;
+  margin-bottom: 20px;
+}
+.name-comment{
+  float: right;
+}
+/* fim */
+footer {
+  padding: 30px;
+  width: 100%;
+  background-color: black;
+  min-height: 200px;
+  border-radius: 12px 12px 0 0;
+}
+footer .direitos h3 {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+}
+.rodape-wraper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.rodape-1 {
+  min-width: 200px;
+  padding: 20px;
+  max-width: 400px;
+  height: 300px;
+}
+.rodape-1 h3 {
+  color: white;
+  font-size: 20px;
+}
+.rodape-1 p {
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+}
 section.contato {
   padding: 20px;
   text-align: center;
   width: 100%;
-  min-height: 400px;
+  min-height: 150px;
 }
 section.contato h2 {
   font-weight: 600;
@@ -216,17 +311,21 @@ section.contato h2 {
 section.contato .contato-wraper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .contatos {
-  margin-top: 100px;
-  width: 100px;
-  height: 100px;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
   background: rgb(101, 152, 152);
-  border-radius: 50px;
+  border-radius: 15px;
   transition: 1s;
   cursor: pointer;
+}
+.contato  h2{
+  padding: 20px;
+  color: white;
 }
 .contatos:hover {
   box-shadow: 2px 5px 15px black;
@@ -254,41 +353,6 @@ section.contato .contato-wraper {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-footer {
-  padding: 30px;
-  width: 100%;
-  background-color: black;
-  min-height: 400px;
-  border-radius: 12px 12px 0 0;
-}
-footer .direitos h3{
-  margin-top: 10px;
-  color: white;
-  text-align: center;
-  font-size: 15px;
-  font-style: italic;
-}
-.rodape-wraper {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: center;
-}
-.rodape-1 {
-  min-width: 200px;
-  padding: 20px;
-  max-width: 400px;
-  height: 300px;
-}
-.rodape-1 h3 {
-  color: white;
-  font-size: 20px;
-}
-.rodape-1 p {
-  color: white;
-  font-size: 12px;
-  font-style: italic;
 }
 @media screen and (max-width: 750px) {
   .icon-menu {
@@ -321,6 +385,30 @@ footer .direitos h3{
     text-decoration: none;
   }
 }
+@media screen and (max-width:660px) {
+  .card-wraper {
+  justify-content: space-around;
+}
+.img-wraper {
+  width: 100%;
+  min-height: 300px;
+}
+.img-wraper .card-img {
+  max-width: none;
+}
+.depoimento-wraper{
+  justify-content: space-around;
+}
+.comment-4{
+display: none;
+}
+.comment-5{
+display: none;
+}
+.comment-6{
+display: none;
+}
+}
 @media screen and (max-width: 400px) {
   .img-wraper {
     box-shadow: 2px 5px 15px #c0c0c0;
@@ -332,15 +420,15 @@ footer .direitos h3{
     min-height: 300px;
   }
   .rodape-1 {
-  min-width: none;
-  padding: 20px;
-  max-width: 120px;
-  height: 300px;
-}
-footer {
-  padding: 30px 0;
-  width: 100%;
-  background-color: black;
-  min-height: 400px;
-}
+    min-width: none;
+    padding: 20px;
+    max-width: 120px;
+    height: 300px;
+  }
+  footer {
+    padding: 30px 0;
+    width: 100%;
+    background-color: black;
+    min-height: 400px;
+  }
 }
