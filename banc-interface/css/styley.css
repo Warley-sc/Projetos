@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* main */
+html body {
+  height: 100%;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+header {
+  padding: 20px;
+  width: 100%;
+  height: 75px;
+}
+header .logotipo {
+  float: left;
+  text-transform: uppercase;
+  color: rgb(71, 71, 228);
+}
+.desktop {
+  float: right;
+}
+.navbar-mobile {
+  display: none;
+}
+
+.desktop ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+.desktop ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 1s;
+  font-weight: bolder;
+}
+.desktop ul li a:hover {
+  color: rgb(71, 71, 228);
+}
+.exit{
+  text-align: center;
+ display: none;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  transition: 1s;
+}
+.exit:hover{
+    background-color: rgb(143, 229, 244);
+
+}
+
+.nav-icon {
+  display: none;
+  border-radius: 20px;
+  float: right;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  transition: 1s;
+}
+.nav-icon span {
+  width: 28px;
+  margin: 8px auto;
+  display: block;
+  height: 2px;
+  background-color: black;
+}
+.nav-icon:hover {
+  background-color: rgb(143, 229, 244);
+}
+/* banner */
+section.banner {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(38, 38, 160),
+    rgb(10, 207, 242),
+    rgb(68, 148, 214)
+  );
+  min-height: 300px;
+  padding: 20px;
+}
+.wraper {
+  padding: 20px 0;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wrapes {
+  margin: 20px 10px;
+  padding: 20px;
+  width: 40%;
+  min-width: 400px;
+}
+
+.wrapes .tex-chamado h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.wrapes .tex-chamado p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: white;
+}
+.wraper .tex-chamado .wraper-button {
+  width: 100%;
+}
+.wraper .tex-chamado .wraper-button input[type="button"] {
+  cursor: pointer;
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+  border: none;
+}
+.center-wraper {
+  width: 100%;
+  margin: 0 auto;
+}
+.wraper-img {
+  margin: 0 auto;
+  min-width: 120px;
+  min-height: 300px;
+  background-image: url(https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px 0 50px 0;
+}
+main {
+  padding: 20px;
+  width: 100%;
+  min-height: 120px;
+}
+main .main-wraper {
+  margin-top: 100px;
+
+  display: flex;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main-wraper02 {
+  padding: 20px 0;
+  width: 40%;
+  min-width: 350px;
+  margin-bottom: 25px;
+}
+.main-wraper .main-text h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.main-wraper .main-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.main-wraper .main-text input[type="button"] {
+  cursor: pointer;
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(71, 71, 228);
+  font-size: 15px;
+  border: none;
+  color: white;
+}
+.main-wraper02 .main-img {
+  margin: 0 auto;
+  background-image: url(https://images.pexels.com/photos/3778680/pexels-photo-3778680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 350px;
+  width: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 200px 40px 150px 150px;
+}
+
+main.main-02 {
+  width: 100%;
+  min-height: 120px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+/* .main-wraper-01 {
+
+} */
+.main-wr {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main2-wraper {
+  padding: 20px 0;
+  width: 40%;
+  min-width: 350px;
+  margin-bottom: 25px;
+}
+.main-wraper-01 .img-main {
+  background-image: url(https://images.pexels.com/photos/17049749/pexels-photo-17049749/free-photo-of-mulher-computador-portatil-laptop-notebook.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  border-radius: 40px 200px 150px 150px;
+}
+.main2-wraper .text-main h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.main2-wraper .text-main p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.main2-wraper .text-main input[type="button"] {
+  cursor: pointer;
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(71, 71, 228);
+  font-size: 15px;
+  border: none;
+  color: white;
+}
+.intro {
+  width: 100%;
+  min-height: 120px;
+  padding: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(38, 38, 160),
+    rgb(10, 207, 242),
+    rgb(68, 148, 214)
+  );
+}
+.intro-text {
+  max-width: 500px;
+  margin: 100px auto;
+  color: white;
+  text-align: center;
+}
+.intro h2 {
+  font-size: 25px;
+}
+.beneficios {
+  width: 100%;
+  min-height: 120px;
+  padding: 20px;
+}
+.beneficios h1 {
+  text-align: center;
+  font-size: 38px;
+}
+.bene-wraper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bene-wraper1 {
+  width: 40%;
+  min-width: 350px;
+}
+.bene-wraper1 .bene-text h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.bene-text {
+  margin-bottom: 50px;
+}
+.bene-wraper .bene-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.bene-wraper1 .bene-img {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  background-image: url(https://images.pexels.com/photos/7621136/pexels-photo-7621136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 200px 40px 150px 150px;
+}
+.beneficios-02 {
+  width: 100%;
+  min-height: 120px;
+  padding: 20px;
+}
+.bene-02 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bene-02f {
+  width: 40%;
+  min-width: 350px;
+  min-height: 100px;
+}
+.bene-02-img {
+  background-image: url(https://images.pexels.com/photos/6214474/pexels-photo-6214474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px 200px 150px 150px;
+  margin-bottom: 30px;
+}
+.bene-text02 h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.bene-text02 p {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+footer {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 120px;
+  padding: 20px;
+  background-color: black;
+}
+.text-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wraper-footer {
+  margin-top: 100px;
+  width: 40%;
+  max-width: 350px;
+  min-height: 100px;
+  min-width: 300px;
+}
+.wraper-footer h3 {
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 20px;
+}
+.wraper-footer p {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+@media screen and (max-width: 897px) {
+  .teste2{
+    order: 0;
+  }
+  .teste{
+    order: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-icon {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    padding: 20px;
+    left: 0;
+    background-color: white;
+    top: 75px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar-mobile li {
+    margin-bottom: 25px;
+    list-style: none;
+  }
+  .navbar-mobile li a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    font-weight: bold;
+    font-size: 20px;
+  }
+    .navbar-mobile li a:hover{
+        color: rgb(71, 71, 228);
+
+    }
+    .exit{
+      position: absolute;
+      right: 20px;
+      font-size: 32px;
+      cursor: pointer;
+    }
+}
+@media screen and (max-width: 500px) {
+  .tex-chamado{
+    text-align: center;
+  }
+  .main-text{
+    text-align: center;
+  }
+  .text-main{
+    text-align: center;
+  }
+  .bene-text{
+    text-align: center;
+  }
+  .bene-text02{
+    text-align: center;
+  }
+  .wraper-footer{
+    text-align: center;
+  }
+}
+@media screen and (max-width= 420px) {
+.wrapes {
+  min-width: none;
+  margin: 20px 10px;
+  padding: 20px;
+  width: 40%;
+}
+.wraper-img {
+  min-width: none;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+
+}
