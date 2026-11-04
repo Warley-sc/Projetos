@@ -1,193 +1,361 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<!-- <css> -->
-<link rel="stylesheet" href="./css/styley.css">
+<html lang="pt-BR">
 
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Banck-interface</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Free Bank - Sua vida financeira mais simples, moderna e inteligente.">
 
+    <title>Free Bank | Banco Digital</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logotipo">
-                <h2>Free banck</h2>
-            </div>
-            <div class="navbar desktop">
-                <ul>
-                    <li><a href="#">Homer</a></li>
-                    <li><a href="#">Homer</a></li>
-                    <li><a href="#">Homer</a></li>
-                </ul>
-            </div>
-            <div class="nav-icon" id="ham-icon" onclick="abrir()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="exit" id="fechar" onclick="fechar1()">
-                X
-            </div>
-            <div class="navbar navbar-mobile" id="navmobile">
-                <ul>
-                    <li><a href="#">Homer</a></li>
-                    <li><a href="#">Homer</a></li>
-                    <li><a href="#">Homer</a></li>
-                </ul>
-            </div>
 
-            <div class="clear"></div><!--cleaer-->
-        </div><!--container-->
+    <!-- CABEÇALHO -->
+    <header class="header" id="inicio">
+        <div class="container header-content">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">F</span>
+                <span>free<span class="logo-highlight">bank</span></span>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#servicos">Serviços</a>
+            </nav>
+
+            <a href="#contato" class="btn btn-header">
+                Abrir minha conta
+                <span>↗</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
     </header>
-    <section class="banner">
-        <div class="container">
-            <div class="wraper">
-                <div class="wrapes teste">
-                    <div class="tex-chamado">
-                        <h2>SUA VIDA FINANCEiRA DE UM JEITO SIMPLES</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non explicabo exercitationem ipsum,
-                        </p>
-                        <div class="wraper-button">
-                            <input type="button" value="Conheça Agora!">
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapes teste2">
-                    <div class="center-wraper">
-                        <div class="wraper-img">
-                        </div>
-                    </div><!--center wraper-->
-                </div><!--wrapes-->
-            </div>
-        </div>
-    </section>
+
     <main>
-        <div class="container">
-            <section class="main-wraper">
-                <div class="main-wraper02">
-                    <div class="main-text">
-                        <h2>A conta que mais rende do Brasil</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro atque soluta sequi itaque aut
-                            dolore.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro atque soluta sequi itaque aut
-                            dolore.</p>
-                        <input type="button" value="Abra conta!">
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="section-tag">
+                        ✦ SEU DINHEIRO, SUAS REGRAS
+                    </span>
+
+                    <h1>
+                        Sua vida financeira
+                        <span>em outro nível.</span>
+                    </h1>
+
+                    <p>
+                        Uma nova maneira de cuidar do seu dinheiro.
+                        Mais liberdade, praticidade e controle financeiro
+                        na palma da sua mão.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn btn-primary">
+                            Conheça o Free Bank <span>→</span>
+                        </a>
+
+                        <a href="#sobre" class="btn btn-outline">
+                            Saiba mais
+                        </a>
                     </div>
-                </div>
 
-                <div class=" main-wraper02">
-                    <div class="main-img">
+                    <div class="hero-trust">
+                        <div class="trust-avatars">
+                            <span>F</span>
+                            <span>B</span>
+                            <span>+</span>
+                        </div>
 
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <main class="main-02">
-        <div class="container">
-            <section class="main-wraper-01">
-                <div class="main-wr">
-                    <div class="main2-wraper">
-                        <div class="img-main">
-
+                        <div>
+                            <strong>Liberdade financeira</strong>
+                            <small>Uma experiência mais simples.</small>
                         </div>
                     </div>
-                    <div class="main2-wraper">
-                        <div class="text-main ">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit perferendis soluta
-                                dolores
-                                earum incidunt iusto.</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit perferendis soluta
-                                dolores
-                                earum incidunt iusto.</p>
-                            <input type="button" value="saiba mais">
+
+                </div>
+
+                <!-- CARTÃO DIGITAL -->
+                <div class="hero-visual">
+
+                    <div class="visual-glow"></div>
+
+                    <div class="bank-card">
+                        <div class="card-top">
+                            <span class="card-logo">freebank.</span>
+                            <span class="card-chip">▦</span>
+                        </div>
+
+                        <div class="card-number">
+                            •••• &nbsp; •••• &nbsp; •••• &nbsp; 2048
+                        </div>
+
+                        <div class="card-bottom">
+                            <div>
+                                <small>CLIENTE FREE BANK</small>
+                                <strong>SEU NOME</strong>
+                            </div>
+
+                            <span class="card-brand">◉</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card balance-card">
+                        <span>Saldo disponível</span>
+                        <strong>R$ 8.450,90</strong>
+                        <small>↑ Seu dinheiro sob controle</small>
+                    </div>
+
+                    <div class="floating-card notification-card">
+                        <span class="notification-icon">✓</span>
+                        <div>
+                            <strong>Transferência recebida</strong>
+                            <small>+ R$ 250,00</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section class="about section-padding" id="sobre">
+            <div class="container about-content">
+
+                <div class="about-image">
+                    <div class="about-decoration">
+                        <span>FB</span>
+                    </div>
+
+                    <div class="about-stat">
+                        <strong>100%</strong>
+                        <span>Digital e prático</span>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <span class="section-tag">SOBRE O FREE BANK</span>
+
+                    <h2>
+                        O futuro financeiro
+                        começa com
+                        <span>boas escolhas.</span>
+                    </h2>
+
+                    <p>
+                        Cuidar do seu dinheiro não precisa ser complicado.
+                        O Free Bank nasceu com a proposta de tornar sua
+                        experiência financeira mais simples, intuitiva
+                        e acessível.
+                    </p>
+
+                    <p>
+                        Tenha mais controle sobre suas finanças e aproveite
+                        uma experiência digital pensada para facilitar
+                        seu dia a dia.
+                    </p>
+
+                    <a href="#servicos" class="btn btn-primary">
+                        Descubra nossas soluções →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section class="services section-padding" id="servicos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">NOSSAS SOLUÇÕES</span>
+                    <h2>Mais praticidade para <span>seu dia.</span></h2>
+                    <p>Recursos pensados para simplificar sua vida financeira.</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">↗</div>
+                        <h3>Transferências</h3>
+                        <p>Movimente seu dinheiro com praticidade e rapidez.</p>
+                        <a href="#contato">Saiba mais →</a>
+                    </article>
+
+                    <article class="service-card featured">
+                        <div class="service-icon">▣</div>
+                        <h3>Cartão digital</h3>
+                        <p>Uma experiência moderna para suas compras e pagamentos.</p>
+                        <a href="#contato">Saiba mais →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">◈</div>
+                        <h3>Controle financeiro</h3>
+                        <p>Acompanhe suas movimentações e organize suas finanças.</p>
+                        <a href="#contato">Saiba mais →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFÍCIOS -->
+        <section class="benefits section-padding" id="beneficios">
+            <div class="container benefits-content">
+
+                <div class="benefits-text">
+                    <span class="section-tag">POR QUE ESCOLHER?</span>
+
+                    <h2>
+                        Seu dinheiro merece
+                        uma experiência
+                        <span>melhor.</span>
+                    </h2>
+
+                    <p>
+                        Tecnologia e simplicidade trabalhando juntas
+                        para proporcionar uma experiência financeira
+                        mais intuitiva.
+                    </p>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Experiência simplificada</strong>
+                            <p>Uma interface intuitiva e fácil de utilizar.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Mais controle</strong>
+                            <p>Visualize suas informações financeiras.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Acesso digital</strong>
+                            <p>Uma experiência pensada para acompanhar você.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+
+                <div class="benefits-visual">
+                    <div class="benefits-panel">
+                        <span class="panel-label">VISÃO FINANCEIRA</span>
+                        <h3>Seu dinheiro em foco.</h3>
+
+                        <div class="chart-placeholder">
+                            <div class="chart-bar" style="height: 35%"></div>
+                            <div class="chart-bar" style="height: 55%"></div>
+                            <div class="chart-bar" style="height: 42%"></div>
+                            <div class="chart-bar" style="height: 75%"></div>
+                            <div class="chart-bar" style="height: 60%"></div>
+                            <div class="chart-bar" style="height: 90%"></div>
+                        </div>
+
+                        <div class="chart-footer">
+                            <span>Organização financeira</span>
+                            <strong>+</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+        <section class="cta" id="contato">
+            <div class="container cta-content">
+                <span class="section-tag">COMECE AGORA</span>
+
+                <h2>
+                    Simplifique sua vida.
+                    <span>Experimente o novo.</span>
+                </h2>
+
+                <p>
+                    Descubra uma nova maneira de enxergar suas finanças.
+                </p>
+
+                <a href="mailto:contato@freebank.com.br" class="btn btn-light">
+                    Entre em contato →
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <section class="intro">
+    <!-- RODAPÉ -->
+    <footer class="footer">
         <div class="container">
-            <div class="intro-text">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem numquam maiores dicta amet ratione
-                    reprehenderit vitae perferendis sequi quo ipsa.</p>
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">
+                        <span class="logo-icon">F</span>
+                        <span>free<span class="logo-highlight">bank</span></span>
+                    </a>
+
+                    <p>
+                        Uma nova experiência para sua vida financeira.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navegação</h3>
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre nós</a>
+                    <a href="#servicos">Serviços</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Informações</h3>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#contato">Contato</a>
+                </div>
 
             </div>
-        </div>
-    </section>
 
-    <section class="beneficios">
-        <h1>Benefícios</h1>
-        <div class="container">
-            <div class="bene-wraper">
-                <div class="bene-wraper1">
-                    <div class="bene-text">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo cumque labore molestiae
-                            animi, similique repudiandae officiis aut. Accusamus, totam!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo cumque labore molestiae
-                            animi, similique repudiandae officiis aut. Accusamus, totam!</p>
-                    </div>
-                </div>
-                <div class="bene-wraper1">
-                    <div class="bene-img">
+            <div class="footer-bottom">
+                <p>© 2026 Free Bank. Projeto demonstrativo.</p>
+                <a href="#inicio">Voltar ao topo ↑</a>
+            </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="beneficios-02">
-        <div class="container">
-            <div class="bene-02">
-                <div class="bene-02f">
-                    <div class="bene-02-img"></div>
-                </div>
-                <div class="bene-02f">
-                    <div class="bene-text02">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, doloribus itaque? Dicta
-                            perspiciatis sint suscipit.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, doloribus itaque? Dicta
-                            perspiciatis sint suscipit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="text-info">
-                <div class="wraper-footer">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil est repellendus saepe.</p>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil est repellendus saepe.</p>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil est repellendus saepe.</p>
-                </div>
-                <div class="wraper-footer">
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil est repellendus saepe.</p>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil est repellendus saepe.</p>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil est repellendus saepe.</p>
-                </div>
-            </div>
         </div>
     </footer>
-</body>
 <script src="./js/navbar.js"></script>
+</body>
 
 </html>

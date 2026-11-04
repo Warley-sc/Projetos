@@ -1,32 +1,145 @@
-const icone = document.getElementById('ham-icon');
-const menumobile = document.getElementById('navmobile');
-const fechar = document.getElementById('fechar');
 
-// Alterna a visibilidade do menu
-const toggleMenu = () => {
-    const isMenuOpen = menumobile.style.display === 'block';
-    icone.style.display = isMenuOpen ? 'block' : 'none';  // Mostra ou esconde o ícone hamburguer
-    fechar.style.display = isMenuOpen ? 'none' : 'block'; // Mostra ou esconde o ícone de fechar
-    menumobile.style.display = isMenuOpen ? 'none' : 'block'; // Alterna o menu
-};
+// ========================================
+// FREE BANK - JAVASCRIPT
+// ========================================
 
-// Adiciona os eventos de clique
-icone.addEventListener('click', toggleMenu);
-fechar.addEventListener('click', toggleMenu);
 
-// Ajusta o menu com base na largura da tela
-const adjustMenuForScreenSize = () => {
-    if (window.innerWidth > 800) {
-        menumobile.style.display = 'none'; // Esconde o menu no desktop
-        fechar.style.display = 'none';      // Esconde o ícone de fechar
-        icone.style.display = 'none';       // Esconde o ícone hamburguer
-    } else {
-        icone.style.display = 'block';      // Mostra o ícone hamburguer no mobile
-        fechar.style.display = 'none';       // Garante que o ícone de fechar está escondido
-        menumobile.style.display = 'none';  // Garante que o menu está escondido por padrão
+// MENU MOBILE
+const menuToggle = document.querySelector('#menu-toggle');
+const navbar = document.querySelector('#navbar');
+
+menuToggle.addEventListener('click', () => {
+
+    const menuAberto = navbar.classList.toggle('active');
+
+    menuToggle.classList.toggle('active');
+
+    menuToggle.setAttribute('aria-expanded', menuAberto);
+
+    menuToggle.setAttribute(
+        'aria-label',
+        menuAberto ? 'Fechar menu' : 'Abrir menu'
+    );
+
+});
+
+
+// FECHAR MENU AO CLICAR EM UM LINK
+const navLinks = document.querySelectorAll('.navbar a');
+
+navLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        navbar.classList.remove('active');
+        menuToggle.classList.remove('active');
+
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menu');
+
+    });
+
+});
+
+
+// FECHAR MENU AO CLICAR FORA DELE
+document.addEventListener('click', (event) => {
+
+    const clicouNoMenu = navbar.contains(event.target);
+    const clicouNoBotao = menuToggle.contains(event.target);
+
+    if (!clicouNoMenu && !clicouNoBotao) {
+
+        navbar.classList.remove('active');
+        menuToggle.classList.remove('active');
+
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Abrir menu');
+
     }
-};
 
-// Ajusta o menu ao carregar a página e ao redimensionar
-window.addEventListener('load', adjustMenuForScreenSize);
-window.addEventListener('resize', adjustMenuForScreenSize);
+});
+
+
+// ANIMAÇÃO DE ENTRADA DAS SEÇÕES
+const elementosAnimados = document.querySelectorAll(
+    '.about-content, .service-card, .benefits-content, .cta-content'
+);
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add('visible');
+
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+elementosAnimados.forEach(elemento => {
+
+    elemento.classList.add('reveal');
+
+    observer.observe(elemento);
+
+});
+
+
+// ATUALIZAR ANO AUTOMATICAMENTE NO RODAPÉ
+const footerText = document.querySelector('.footer-bottom p');
+
+if (footerText) {
+
+    footerText.textContent =
+        `© ${new Date().getFullYear()} Free Bank. Projeto demonstrativo.`;
+
+}
+
+
+// DESTAQUE DOS LINKS DE NAVEGAÇÃO
+const sections = document.querySelectorAll(
+    'main section[id], main section'
+);
+
+const navObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const id = entry.target.id;
+
+            if (!id) return;
+
+            navLinks.forEach(link => {
+
+                link.classList.toggle(
+                    'active-link',
+                    link.getAttribute('href') === `#${id}`
+                );
+
+            });
+
+        }
+
+    });
+
+}, {
+    rootMargin: '-30% 0px -60% 0px'
+});
+
+sections.forEach(section => {
+
+    if (section.id) {
+        navObserver.observe(section);
+    }
+
+});
